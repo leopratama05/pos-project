@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Category;
+use App\Models\Product;
+use App\Models\User;
 
 class HomeController extends Controller
 {
@@ -23,7 +26,11 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        //passing data user, categories, product
+        $c['categories'] = Category::count();
+        $c['product']= Product::count();
+        $c['user'] = User::count();
+        return view('home', $c);
     }
     public function adminPage()
     {

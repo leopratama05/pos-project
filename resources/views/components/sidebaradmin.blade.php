@@ -13,10 +13,10 @@
         @if (Auth::user()->level == 'admin')
         <li><a class="nav-link" href="{{route('category.index')}}"><i class="far fa-square"></i> <span>Data Category</span></a></li>
         <li><a class="nav-link" href="{{route('product.index')}}"><i class="far fa-square"></i> <span>Data Product</span></a></li>
-        <li><a class="nav-link" href="#"><i class="far fa-square"></i> <span>Order</span></a></li>
+        <li><a class="nav-link" href="{{route('order.index')}}"><i class="far fa-square"></i> <span>Order</span></a></li>
         <li><a class="nav-link" href="#"><i class="far fa-square"></i> <span>Transaction</span></a></li>
         @else
-        <li><a class="nav-link" href="#"><i class="far fa-square"></i> <span>Order</span></a></li>
+        <li><a class="nav-link" href="{{route('order.index')}}"><i class="far fa-square"></i> <span>Order</span></a></li>
         <li><a class="nav-link" href="#"><i class="far fa-square"></i> <span>Transaction</span></a></li>
         @endif
         

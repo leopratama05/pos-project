@@ -26,3 +26,6 @@ Route::resource('category',App\Http\Controllers\CategoryController::class)->midd
 
 //rute product 
 Route::resource('product', App\Http\Controllers\ProductController::class)->middleware('is_admin');
+
+//rute order
+Route::resource('order', App\Http\Controllers\OrderController::class)->middleware('is_admin');

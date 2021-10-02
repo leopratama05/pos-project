@@ -14,7 +14,7 @@
                         </div>
                         <div class="card-wrap">
                             <div class="card-header"><h4>Total User</h4></div>
-                            <div class="card-body"><h6>Nanti</h6></div>
+                            <div class="card-body"><h6>{{$user}}</h6></div>
                         </div>
                     </div>
                 </div>
@@ -25,7 +25,7 @@
                         </div>
                         <div class="card-wrap">
                             <div class="card-header"><h4>Total Product</h4></div>
-                            <div class="card-body"><h6>Nanti</h6></div>
+                            <div class="card-body"><h6>{{$product}}</h6></div>
                         </div>
                     </div>
                 </div>
@@ -36,7 +36,7 @@
                         </div>
                         <div class="card-wrap">
                             <div class="card-header"><h4>Total Categories</h4></div>
-                            <div class="card-body"><h6>Nanti</h6></div>
+                            <div class="card-body"><h6>{{$categories}}</h6></div>
                         </div>
                     </div>
                 </div>
